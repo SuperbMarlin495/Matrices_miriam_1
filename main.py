@@ -1,22 +1,10 @@
-print("Escibre el tamaño de la matriz")
+matriz1 = [[1, 2, 3, 4], 
+           [4,5,6,7], 
+           [7,8,9,8],
+           [1,4,2,3]]
 
-filas = int(input("Filas:  "))
-columnas = int(input("Columnas:  "))
+matriz2 = [[1,5,6,5], 
+           [2,4,6,8], 
+           [6,7,6,3],
+           [4,7,5,1]]
 
-M1 = []
-
-
-for i in range(filas):
-    M1.append([0])
-    for h in range(columnas):
-        entrada = float(input("Fila {}, Columna {} :  ",format(i + 1, h + 1)))
-        M1[i].append(entrada)
-    
-
-#To print the matrix
-print(M1)
-
-
-matrix_length = len(M1)
-for i in range(matrix_length):
-    print(M1[i][-1])
